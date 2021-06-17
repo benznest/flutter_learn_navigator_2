@@ -60,13 +60,13 @@ class MyRouterDelegate extends RouterDelegate<MyConfiguration>
               },
             )),
         if (state.color != null)
-          MyPage(
+          MaterialPage(
               key: ValueKey('page_color_detail'),
               child: ColorDetailScreen(
                 colorItem: state.color!,
               )),
         if (state.isError)
-          MaterialPage(key: ValueKey('page_error'), child: ErrorPathScreen()),
+          MyPage(key: ValueKey('page_error'), child: ErrorPathScreen()),
       ],
     );
   }
